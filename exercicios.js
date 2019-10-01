@@ -109,19 +109,36 @@ let r = require("readline-sync");
 
 const lista = [56, 89, 34, 12, 23, 55, 9]
 
-for (let i=0; i< lista.length; i++){
-    for(let j = 0; j < lista.length; j++){
-        if(lista[j] > lista[j + 1]) {
-            const auxiliar = lista[j]
-            lista[j] = lista[j+1]
-            lista[j +1] = auxiliar
+// for (let i=0; i< lista.length; i++){
+//     for(let j = 0; j < lista.length; j++){
+//         if(lista[j] > lista[j + 1]) {
+//             const auxiliar = lista[j]
+//             lista[j] = lista[j+1]
+//             lista[j +1] = auxiliar
 
-        }
+//         }
+//     }
+
+// }
+
+// console.log(lista)
+
+
+//------------------- PARA MONTAR UMA MATRIZ 5X5 DE ARRAYS
+
+
+const arr = []
+let count = 1
+for (let i=0; i<5; i++){
+    const linha = []
+    for (j=0; j<5; j++){
+        linha[j] = count;
+        count++
     }
 
+    arr[i] = linha
 }
-
-console.log(lista)
+console.log(arr)
 
 
 
